@@ -39,6 +39,23 @@ let myRegex = /[^aeiou0-9]/ig; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
 
 
+// Iterate Through All an Array's Items Using For Loops
+
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+ for (let i = 0; i < arr.length; i++){
+   if(!arr[i].includes(elem)) {
+     newArr.push(arr[i])
+   }
+  
+ }
+  // Only change code above this line
+  return newArr;
+}
+
+
+
 
 
 
