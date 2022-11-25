@@ -55,7 +55,33 @@ function filteredArray(arr, elem) {
 }
 
 
+// Iterate Through the Keys of an Object with a for...in Statement
 
+const users = {
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
+
+function countOnline(obj) {
+  // change code below this line
+  let result = 0;
+  for (let user in obj) {
+    if (obj[user].online === true) {
+      result++;
+    }
+  }
+  return result;
+  // change code above this line
+}
+
+console.log(countOnline(users));
 
 
 
