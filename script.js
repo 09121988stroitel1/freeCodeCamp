@@ -123,8 +123,11 @@ function findLongestWordLength(str) {
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 
+Truncate a String
 
-
+function truncateString(str, num) {
+  return str.length <= num ? str : str.slice(0, num) + '...';
+}
 
 
 
